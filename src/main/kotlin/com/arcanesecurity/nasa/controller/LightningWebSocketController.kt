@@ -21,14 +21,14 @@ class LightningWebSocketController : TextWebSocketHandler() {
         if (payload == "give me the lightnings") {
             lightningRepository.handshakeLightningWs { message ->
                 message?.let {
-
-
-
                     val m : CharSequence = it
                     session.sendMessage(TextMessage(m))
                 }
             }
+        } else  if (payload == "stop now") {
+            lightningRepository.stop()
         }
+
     }
 
 }

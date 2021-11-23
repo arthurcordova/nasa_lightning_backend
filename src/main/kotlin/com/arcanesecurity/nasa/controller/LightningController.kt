@@ -33,7 +33,7 @@ class LightningController {
         lightningRepository.handshakeLightningWs {
             print(it)
         }
-        return listOf(Lightning.mock())
+        return listOf(Lightning.mock(), Lightning.mock(), Lightning.mock())
     }
 
 //    @GetMapping("{id}")
