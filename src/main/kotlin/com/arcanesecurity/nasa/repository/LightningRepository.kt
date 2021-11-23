@@ -6,12 +6,17 @@ import com.google.gson.Gson
 import com.neovisionaries.ws.client.*
 
 class LightningRepository {
+    val factory = WebSocketFactory()
+    var ws : WebSocket? = null
+
+    fun stop() {
+        ws?.sendClose()
+    }
 
     fun handshakeLightningWs(onMessage: (String?) -> Unit) {
-        val factory = WebSocketFactory()
-        factory.createSocket("wss://live.lightningmaps.org/", 5000).let { ws: WebSocket? ->
-
-            ws?.addListener(object : WebSocketAdapter() {
+        factory.createSocket("wss://live.lightningmaps.org/", 5000).let { w: WebSocket? ->
+            this.ws = w
+            this.ws?.addListener(object : WebSocketAdapter() {
 
                 override fun onConnected(websocket: WebSocket?, headers: MutableMap<String, MutableList<String>>?) {
                     super.onConnected(websocket, headers)

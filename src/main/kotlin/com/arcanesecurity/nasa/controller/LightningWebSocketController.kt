@@ -25,7 +25,10 @@ class LightningWebSocketController : TextWebSocketHandler() {
                     session.sendMessage(TextMessage(m))
                 }
             }
+        } else  if (payload == "stop now") {
+            lightningRepository.stop()
         }
+
     }
 
 }
