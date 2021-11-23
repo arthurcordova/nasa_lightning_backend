@@ -1,1 +1,1 @@
-rootProject.name = "nasa"
+rootProject.name = "nasa_lightning_backend"

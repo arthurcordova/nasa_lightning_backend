@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.5.5"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	war
 	kotlin("jvm") version "1.5.31"
 	kotlin("plugin.spring") version "1.5.31"
 }
@@ -17,12 +16,14 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.springframework.boot:spring-boot-starter-web:2.5.6")
+	implementation("org.springframework.boot:spring-boot-starter-websocket:2.5.6")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("com.neovisionaries:nv-websocket-client:2.14")
+	implementation("com.google.code.gson:gson:2.8.9")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:2.5.6")
 }
 
 tasks.withType<KotlinCompile> {
