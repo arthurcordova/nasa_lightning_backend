@@ -18,14 +18,14 @@ class LightningWebSocketController : TextWebSocketHandler() {
     @Throws(InterruptedException::class, IOException::class)
     override fun handleTextMessage(session: WebSocketSession, message: TextMessage) {
         val payload = message.payload
-        if (payload == "give me the lightnings") {
+        if (payload == "Activate SOS Collection") {
             lightningRepository.handshakeLightningWs { message ->
                 message?.let {
                     val m : CharSequence = it
                     session.sendMessage(TextMessage(m))
                 }
             }
-        } else  if (payload == "stop now") {
+        } else  if (payload == "Stop SOS Collection") {
             lightningRepository.stop()
         }
 
