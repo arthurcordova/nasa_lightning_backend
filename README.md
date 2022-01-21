@@ -8,12 +8,12 @@ This API has been built with the objective of showing the lightnings that are fa
 <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="32" height="32"/> </a> 
 <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="32" height="32"/> </a> </p>
 
-## How does to request that API? 🤷‍
+<h2> How does to request that API? 🤷</h2>
 
-###Let's begin 
+<h3>Let's begin<h3/> 
 To simulate an application we strongly recommend to use <a href="https://www.postman.com/downloads/" target="_blank">Postman</a> it's a powerful tool to test this kind of applications.
 
-###URL address 
+<h3>URL address</h3> 
 
 This API has been deployed on Google Cloud Platform. Below it is the API url address: 
 
@@ -27,18 +27,18 @@ To begin after connected you have to send the message <b>'Activate SOS Collectio
 Activate SOS Collection
 ````
 
-###A Postman sample:
+<h2>A Postman sample:</h2>
 
-####Connecting
+<h3>Connecting</h3>
 ![](readme_assets/postman_001.png)
 
-####After connected sending the message
+<h3>After connected sending the message</h3>
 ![](readme_assets/postman_002.png)
 
-####Response
+<h3>Response</h3>
 ![](readme_assets/postman_002.png)
 
-###The Response
+<h3>The Response</h3>
 
 Lets get open the response json: 
 
