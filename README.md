@@ -30,13 +30,13 @@ Activate SOS Collection
 ###A Postman sample:
 
 ####Connecting
-![](../../nasa_lighting/readme_assets/postman_001.png)
+![](readme_assets/postman_001.png)
 
 ####After connected sending the message
-![](../../nasa_lighting/readme_assets/postman_002.png)
+![](readme_assets/postman_002.png)
 
 ####Response
-![](../../nasa_lighting/readme_assets/postman_003.png)
+![](readme_assets/postman_002.png)
 
 ###The Response
 
