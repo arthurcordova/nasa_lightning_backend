@@ -31,13 +31,13 @@ Activate SOS Collection
 
 <h3>Connecting</h3>
 
-<a href="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_001.png" target="_blank" rel="noreferrer"> <img src="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_001.png" alt="kotlin" width="500" height="500"/> </a>
+<a href="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_001.png" target="_blank" rel="noreferrer"> <img src="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_001.png" alt="kotlin" width="500" height="300"/> </a>
 
 <h3>After connected sending the message</h3>
-![](readme_assets/postman_002.png)
+<a href="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_002.png" target="_blank" rel="noreferrer"> <img src="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_002.png" alt="kotlin" width="500" height="300"/> </a>
 
 <h3>Response</h3>
-![](readme_assets/postman_002.png)
+<a href="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_003.png" target="_blank" rel="noreferrer"> <img src="https://github.com/arthurcordova/nasa_lightning_backend/blob/master/readme_assets/postman_003.png" alt="kotlin" width="500" height="300"/> </a>
 
 <h3>The Response</h3>
 
