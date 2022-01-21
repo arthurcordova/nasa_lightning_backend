@@ -27,3 +27,68 @@ To begin after connected you have to send the message <b>'Activate SOS Collectio
 Activate SOS Collection
 ````
 
+###A Postman sample:
+
+####Connecting
+![](../../nasa_lighting/readme_assets/postman_001.png)
+
+####After connected sending the message
+![](../../nasa_lighting/readme_assets/postman_002.png)
+
+####Response
+![](../../nasa_lighting/readme_assets/postman_003.png)
+
+###The Response
+
+Lets get open the response json: 
+
+```` json lines
+{
+    "time": 1642729723,
+    "strokes": [
+        {
+            "time": 1642729663167,
+            "lat": -15.27459,
+            "lon": 170.733001,
+            "power": 951
+        },
+        {
+            "time": 1642729663167,
+            "lat": -15.27459,
+            "lon": 170.733001,
+            "power": 517
+        }
+    ]
+}
+````
+<br/>
+<h3>Main node</h3>
+
+- ```` json
+  "time" : long
+  ```` 
+  General time (Timestamp)
+- ```` json
+  "strokes" : Array
+  ```` 
+  List of strokes
+
+<br/>
+<h3>Stroke</h3>
+
+- ```` json
+  "time" : long
+  ```` 
+  The timestamp of stroke
+- ```` json
+  "lat" : double
+  ```` 
+  Latitude of stroke 
+- ```` json
+  "lon" : double
+  ```` 
+  Longitude of stroke 
+- ```` json
+  "power" : Int
+  ```` 
+  Power of stroke 
